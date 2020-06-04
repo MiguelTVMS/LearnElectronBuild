@@ -1,0 +1,27 @@
+{
+  "name": "learnelectronbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-packager ./ --platform=darwin --arch=x64 --out=./.dist",
+    "build:linux": "electron-packager ./ --platform=linux --arch=x64 --out=./.dist",
+    "build:windows": "electron-packager ./ --platform=win32 --arch=x64 --out=./.dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelTVMS/LearnElectronBuild.git"
+  },
+  "author": "João Miguel Tabosa Vaz Marques Silva <joao@miguel.ms>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MiguelTVMS/LearnElectronBuild/issues"
+  },
+  "homepage": "https://github.com/MiguelTVMS/LearnElectronBuild#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "electron": "^9.0.2",
+    "electron-packager": "^14.2.1"
+  }
+}
